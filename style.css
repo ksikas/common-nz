@@ -69,6 +69,12 @@ ol {
   padding: 0 8px;
 }
 
+.card-block {
+  display: flex;
+  gap: 10px;
+  width: 50%;
+}
+
 .header__card {
   background-color: #c0cef4;
   box-sizing: border-box;
@@ -82,7 +88,7 @@ ol {
   border-radius: 10px;
   box-shadow: 3px 3px 5px #69758d;
   text-align: center;
-  width: 16.6%;
+  width: 33%;
 }
 
 .header__card:hover {
@@ -103,8 +109,18 @@ ol {
   font-weight: 700;
 }
 
-@media (width < 750px) {
+@media (width < 1140px) {
   .header__cards-block {
+    flex-direction: column;
+  }
+
+  .card-block {
+    width: 100%;
+  }
+}
+
+@media (width < 500px) {
+  .card-block {
     flex-direction: column;
   }
 
